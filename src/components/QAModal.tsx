@@ -10,7 +10,7 @@ export default function QAModal({ open }: { open: boolean }) {
     <div className="max-w-lg mx-auto">
       <form onSubmit={handleSubmit}>
         <input
-          placeholder="Will AI Take All Our Jobs?"
+          placeholder="How to create a Corellium device snapshot?"
           className="w-full flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm focus:outline-none  sm:text-sm sm:leading-6"
           value={input}
           onChange={handleInputChange}
