@@ -9,7 +9,7 @@ import path from 'path';
 
 dotenv.config({ path: `.env.local` });
 
-const fileNames = fs.readdirSync('docss');
+const fileNames = fs.readdirSync('docs');
 const lanchainDocs = fileNames.map((fileName) => {
   const filePath = path.join('docs', fileName);
   const fileContent = fs.readFileSync(filePath, 'utf8');
