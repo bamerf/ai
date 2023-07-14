@@ -27,7 +27,7 @@ This repository contains a Next.js application that utilizes LangChain.js, Pinec
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone git@github.com:bamerf/ai.git
    ```
 
 2. Install dependencies
