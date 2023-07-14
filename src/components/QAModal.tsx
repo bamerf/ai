@@ -6,6 +6,18 @@ export default function QAModal({ open }: { open: boolean }) {
       api: '/api/qa-pinecone',
     });
 
+  const formattedCompletion = completion.split('\n').map((line, index) => {
+    return (
+      <p
+        key={index}
+        className="mt-1 text-sm prose text-gray-200"
+        dangerouslySetInnerHTML={{
+          __html: line,
+        }}
+      />
+    );
+  });
+
   return (
     <div className="max-w-lg mx-auto">
       <form onSubmit={handleSubmit}>
@@ -17,11 +29,7 @@ export default function QAModal({ open }: { open: boolean }) {
         />
       </form>
       <div className="mt-3 sm:mt-5">
-        {completion && (
-          <div className="mt-2">
-            <p className="text-sm text-gray-200">{completion}</p>
-          </div>
-        )}
+        {formattedCompletion}
 
         {isLoading && !completion && (
           <p className="flex items-center justify-center mt-4">
