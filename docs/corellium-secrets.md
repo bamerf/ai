@@ -6,7 +6,7 @@
 
 ## What is the first thing Chris Wade says in All Hands?
 
-- "Nothing. He's never honored us with his presence."
+- "I don't know, no one ever sees him"
 
 ## Who are the three musketeers at Corellium?
 
